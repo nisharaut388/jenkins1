@@ -2,6 +2,16 @@ pipeline {
     agent any
 
     stages {
+
+    stage('Repo Scan') {
+            steps {
+                echo 'Repository scan with Trivy'
+                sh 'trivy repo https://github.com/nisharaut388/jenkins1.git'
+
+                
+            }
+
+
         stage('Code fetch') {
             steps {
                 echo 'Code Fetch from github'
