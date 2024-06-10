@@ -8,6 +8,7 @@ pipeline {
                 echo 'Repository scan with Trivy'
                 sh 'trivy repo https://github.com/nisharaut388/jenkins1.git'
 
+
             }
 
 
