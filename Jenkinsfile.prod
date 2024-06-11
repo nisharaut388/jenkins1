@@ -32,6 +32,7 @@ pipeline {
             steps {
                 echo 'Image Scan '
                 git url :'trivy image my-new-website_prod'
+
                 
             }
         }
